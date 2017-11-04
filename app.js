@@ -37,7 +37,7 @@ app.get('/', function (req,res,next) {
 })
 
 app.get('/insights', function (req,res,next) {
-  res.render('insights', {title: 'Insights', data: store})
+  res.render('insights', {title: 'Insights'})
 })
 
 // catch 404 and forward to error handler

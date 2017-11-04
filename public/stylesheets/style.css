@@ -5,3 +5,11 @@ padding:10px;}
 td {font-size:1.1em;
 padding:10px;
 text-align:center;}
+
+/* reverse order of li elements in order to make newest item on top and oldest on bottom */
+tbody {
+  transform: rotate(180deg);
+}
+tbody > tr {
+  transform: rotate(-180deg);
+}
