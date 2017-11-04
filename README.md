@@ -7,3 +7,4 @@ run 'npm start' and navigate browser to localhost:3000/
 Improvements:
 - check if input is correct
 - implement react on front-end (given the scale of this project this was unnecessary) and redux as state manager
+- loading icon while fetching data
