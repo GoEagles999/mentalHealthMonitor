@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.0/axios.min.js')
+    script(src='javascripts/pullData.js')
+  body
+    nav.navbar.navbar-light(style='margin-bottom:0px;')
+      a.navbar-brand(href='/', style='font-size:1.7em') Mental Health Monitor
+      .collapse.navbar-collapse
+        ul.navbar-nav(style='list-style:none;')
+          li.nav-item(style='width:100px;text-align:center;padding:15px;font-size:1.2em;margin-left:0px;margin-right:0px;')
+            a.nav-link(href='/') Check-in
+          li.nav-item(style='width:100px;text-align:center;padding:15px;font-size:1.2em;margin-left:0px;margin-right:0px;')
+            a.nav-link(href='/insights') Insights
+    block content

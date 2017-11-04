@@ -1,0 +1,19 @@
+extends insightsLayout
+
+block content
+  .container
+    .row
+      .col-sm-10
+        h3= title
+        p Find important data about your mood here.
+        p#avgMood(style='font-weight:bold')
+        p#nbrOfCheckIns(style='font-weight:bold;')
+        h3 Diary
+        table.table-striped.table(style='width:60%')
+          thead
+            tr
+              th Time
+              th Mood
+              th Emotional State
+              th Comment
+          tbody#tablebody
